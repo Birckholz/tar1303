@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Album {
     private String  nome;
     private String  anoLan;
-    private ArrayList<String> listMus;
+    private ArrayList<Musica> listMus;
 
     public Album(String nome, String anoLan) {
         this.nome = nome;
@@ -19,7 +19,7 @@ public class Album {
         return anoLan;
     }
 
-    public void addMus(String nomeMus) {
-        this.listMus.add(nomeMus);
+    public void addMus(Musica mus) {
+        this.listMus.add(mus);
     }
 }
